@@ -102,7 +102,7 @@ class _Model(object):
                                model_version_id=self.model_version_id,
                                location_id=self.metadata.location_ids,
                                year_id=self.metadata.year_id)
-        assert not df.empty, ("No round 5 data found for this model.")
+        assert not df.empty, "No round 5 data found for this model."
         return df
 
     def _get_outputs(self):
